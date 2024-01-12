@@ -8,9 +8,6 @@
 
 Ares Chang's Self-Introduction Toolkit
 
-> **Note**:
-> Replace `Npx-Ares-Chang`, `Ares Chang's Self-Introduction Toolkit` and `Ares-Chang` globally to use this template.
-
 ## License
 
 [MIT](./LICENSE) License © 2023-PRESENT [Ares-Chang](https://github.com/Ares-Chang)
