@@ -1,1 +1,3 @@
-console.log('Hello World!')
+export function AresChang() {
+  console.log('Hello World!')
+}
