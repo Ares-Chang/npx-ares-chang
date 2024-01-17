@@ -1,20 +1,48 @@
-import colors from 'colors'
+import chalk from 'chalk'
 import { textSync } from 'figlet'
 import { say } from 'cowsay'
 
+const log = console.log
+
+interface FindMeItem {
+  label: string
+  url: string
+}
+
+const list: FindMeItem[] = [
+  {
+    label: 'Notes',
+    url: 'https://areschang.top',
+  },
+  {
+    label: 'GitHub',
+    url: 'https://github.com/Ares-Chang',
+  },
+  {
+    label: 'NpmJS',
+    url: 'https://www.npmjs.com/settings/areschang/packages',
+  },
+]
+
+function findMe({ label, url }: FindMeItem) {
+  return chalk.blue(`${label}: ${chalk.underline(url)}`)
+}
+
 export function AresChang() {
-  console.log(colors.rainbow(textSync('Ares Chang', 'Cola')))
-  console.log(colors.trap(textSync('Ares Chang')))
-  console.log(colors.rainbow(textSync('Hello World!', 'Ghost')))
+  log(textSync('Ares Chang'))
 
-  console.log(colors.rainbow('OMG Rainbows!')) // rainbow
-  console.log(colors.trap('Run the trap')) // Drops the bass
+  log('可以在以下找到我:')
 
-  console.log(colors.rainbow(say({
+  list.forEach(obj => log(findMe(obj)))
+
+  log(say({
     text: '生而牛马，我很抱歉。',
     e: 'oO',
     T: 'U ',
-  })))
+  }))
+
+  log(chalk.red.underline('Happy every day!'))
+  log(chalk.hex('#DEADED').bold('Goodbye!'))
 }
 
 AresChang()
