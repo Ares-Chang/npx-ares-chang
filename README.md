@@ -6,7 +6,9 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
-Ares Chang's Self-Introduction Toolkit
+Ares Chang 的自我介绍工具包！
+
+![效果图](./exhibit.png)
 
 ## License
 
