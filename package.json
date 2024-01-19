@@ -16,7 +16,12 @@
     "url": "git+https://github.com/Ares-Chang/npx-ares-chang.git"
   },
   "bugs": "https://github.com/Ares-Chang/npx-ares-chang/issues",
-  "keywords": [],
+  "keywords": [
+    "Toolkit",
+    "areschang",
+    "AresChang",
+    "self-introduction"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
