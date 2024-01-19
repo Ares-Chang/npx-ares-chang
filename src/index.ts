@@ -49,5 +49,3 @@ export function AresChang() {
   log(blank + chalk.red.underline('Happy every day!'))
   log(blank + chalk.hex('#DEADED').bold('Goodbye!'))
 }
-
-AresChang()
