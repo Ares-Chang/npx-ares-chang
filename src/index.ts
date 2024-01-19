@@ -1,9 +1,9 @@
 import chalk from 'chalk'
 import { textSync } from 'figlet'
 import { say } from 'cowsay'
+import { author } from '../package.json'
 
 const log = console.log
-
 interface FindMeItem {
   label: string
   url: string
@@ -15,17 +15,21 @@ const list: FindMeItem[] = [
     url: 'https://areschang.top',
   },
   {
+    label: 'Email',
+    url: `mailto:${author.email}`,
+  },
+  {
     label: 'GitHub',
     url: 'https://github.com/Ares-Chang',
   },
   {
     label: 'NpmJS',
-    url: 'https://www.npmjs.com/settings/areschang/packages',
+    url: 'https://www.npmjs.com/~areschang',
   },
 ]
 
 function findMe({ label, url }: FindMeItem) {
-  return chalk.blue(`${label}: ${chalk.underline(url)}`)
+  return `${chalk.magenta(label)}: ${chalk.blue.underline(url)}`
 }
 
 export function AresChang() {
@@ -41,8 +45,9 @@ export function AresChang() {
     T: 'U ',
   }))
 
-  log(chalk.red.underline('Happy every day!'))
-  log(chalk.hex('#DEADED').bold('Goodbye!'))
+  const blank = '                              '
+  log(blank + chalk.red.underline('Happy every day!'))
+  log(blank + chalk.hex('#DEADED').bold('Goodbye!'))
 }
 
 AresChang()
