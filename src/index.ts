@@ -37,7 +37,14 @@ function findMe({ label, url }: FindMeItem) {
  * @param text
  */
 function rainbow(text: string) {
-  const colors = ['red', 'green', 'yellow', 'blue', 'magenta', 'cyan']
+  const colors = [
+    'red',
+    'green',
+    'yellow',
+    'blue',
+    'magenta',
+    'cyan',
+  ].sort(() => Math.random() - 0.5)
 
   const list = text.split('').map((char, index) => {
     const color = colors[index % colors.length]
